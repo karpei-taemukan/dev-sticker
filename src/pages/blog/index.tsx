@@ -12,7 +12,7 @@ export default function Blog({data} : PageProps<Queries.BlogTitlesQuery>){
           {data.allFile.nodes.map((file,index) => <li key={index}>{file.name}</li>)}
         </ul>
 
-        <section>
+        <section className="grid">
           {data.allMdx.nodes.map((file, index) => (
             <article key={index}>
               <Link to={`/blog/${file.frontmatter?.slug}`}>

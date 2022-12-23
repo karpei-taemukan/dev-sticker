@@ -8,6 +8,7 @@ export default function IndexPage({data}:PageProps<Queries.StickersQuery>) {
   console.log(data)
   return (
   <Layout title="Welcome to DevStickers">
+    <div className="container">
    <StaticImage 
    height={1000}
    width={1000}
@@ -23,6 +24,7 @@ export default function IndexPage({data}:PageProps<Queries.StickersQuery>) {
 </Link>
 </article>))}
    </article>
+   </div>
   </Layout>
   )
 }
